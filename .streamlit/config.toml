@@ -1,0 +1,12 @@
+[server]
+port            = 8500
+address         = "0.0.0.0"
+headless        = true
+maxUploadSize   = 50        # MB máximo por upload
+baseUrlPath     = "mxm"     # acesso via localhost:8501/mxm
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "dark"
