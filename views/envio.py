@@ -14,7 +14,11 @@ import pandas as pd
 import streamlit as st
 
 import db
+<<<<<<< HEAD
 from data.api import build_payload, chamar_endpoint
+=======
+from api import build_payload, chamar_endpoint
+>>>>>>> dev
 from utils import extrair_valor, flatten_json, reconstruct_json
 
 NAO_MAPEAR      = "-- Não mapear --"
