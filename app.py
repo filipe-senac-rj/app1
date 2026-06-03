@@ -39,7 +39,7 @@ def render_sidebar() -> str:
     user  = st.session_state.get("_user", {})
 
     with st.sidebar:
-        st.markdown("## 🏢 MXM Integrador - deploy automático 123")
+        st.markdown("## 🏢 MXM Integrador - deploy automático 18:52")
         st.markdown("---")
 
         # Garante que a página atual é válida para o perfil
