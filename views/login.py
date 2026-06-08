@@ -14,7 +14,7 @@ def show() -> None:
     with col:
         st.markdown("<br><br>", unsafe_allow_html=True)
         st.markdown("## 🏢 MXM Integrador")
-        st.markdown("Faça login para continuar. (Atualizado: 2026-08-06 09:16)")
+        st.markdown("Faça login para continuar. (Atualizado: 2026-08-06 10:40)")
         st.markdown("---")
 
         with st.form("form_login"):
