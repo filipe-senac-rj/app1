@@ -25,4 +25,12 @@ jobs:
             git fetch origin
             git reset --hard origin/main
 
-           
+            echo "==> Rebuild da aplicação"
+            cd /home/senadev/apps/app1
+            docker compose up -d --build --remove-orphans
+
+            echo "==> Containers ativos"
+            docker ps
+
+            echo "==> Logs finais app1"
+            docker logs app1 --tail 30 || true
