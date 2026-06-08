@@ -18,14 +18,11 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
+            set -e
+
             echo "==> Atualizando código"
             cd /home/senadev/apps/app1/src
             git fetch origin
             git reset --hard origin/main
 
-            echo "==> Subindo container"
-            cd /home/senadev/apps/app1
-            docker compose up -d --build --remove-orphans
-
-            echo "==> Containers:"
-            docker ps
+           
